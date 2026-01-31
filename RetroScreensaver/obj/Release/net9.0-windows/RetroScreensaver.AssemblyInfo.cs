@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A retro 8-bit style screensaver with classic demoscene effects")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff8f49e875bd21ace8ab86f5cdc36fe1d692a707")]
 [assembly: System.Reflection.AssemblyProductAttribute("Retro 8-Bit Screensaver")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Retro8Bit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

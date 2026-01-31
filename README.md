@@ -11,7 +11,7 @@ A Windows screensaver featuring classic 8-bit demoscene effects with authentic r
   - Fire - Realistic flame simulation
   - Matrix Rain - Digital rain effect
   - Sine Scroller - Wavy text animation
-  - Dissolver - Dissolve transition effect
+  - Dissolver - Dissolve transition effect with crackling sound
 - **Period-appropriate palettes** - CGA, C64, and custom gradient palettes
 - **Multi-monitor support** - Runs on all connected displays
 - **Smooth transitions** - Alpha-blending crossfade between effects

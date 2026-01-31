@@ -63,6 +63,7 @@ public sealed class DissolverEffect : IEffect
         {
             CaptureScreen();
             _screenCaptured = true;
+            SoundHelper.PlayDissolveSound();
         }
 
         // Advance dissolution
@@ -118,6 +119,8 @@ public sealed class DissolverEffect : IEffect
 
     private void CycleToNextPattern()
     {
+        SoundHelper.StopDissolveSound();
+
         // Move to next pattern
         _currentPattern = (_currentPattern + 1) % PatternCount;
 
@@ -318,6 +321,7 @@ public sealed class DissolverEffect : IEffect
 
     public void Reset()
     {
+        SoundHelper.StopDissolveSound();
         _dissolveProgress = 0;
         _screenCaptured = false;
         _currentPattern = 0; // Start from first pattern on manual reset
@@ -329,5 +333,8 @@ public sealed class DissolverEffect : IEffect
         }
     }
 
-    public void Dispose() { }
+    public void Dispose()
+    {
+        SoundHelper.StopDissolveSound();
+    }
 }

@@ -9,6 +9,7 @@ C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\ne
 C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\RetroScreensaver.AssemblyInfoInputs.cache
 C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\RetroScreensaver.AssemblyInfo.cs
 C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\RetroScreensaver.csproj.CoreCompileInputs.cache
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\RetroScreensaver.sourcelink.json
 C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\Retro8Bit.dll
 C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\refint\Retro8Bit.dll
 C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\Retro8Bit.pdb

@@ -65,3 +65,7 @@ Uses P/Invoke (SetParent, SetWindowLong) for preview window embedding.
 - **Delta-time animation**: All effects receive deltaTime for frame-rate independence
 - **Multi-monitor**: ScreensaverForm spawned on each screen via `Screen.AllScreens`
 - **Input handling**: Any keyboard/mouse activity exits screensaver (handled in ScreensaverForm)
+
+## Documentation Guidelines
+
+- **Update README.md** when making minor or major changes to the project (new effects, API changes, build process updates, new features)

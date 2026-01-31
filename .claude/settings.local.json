@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(dotnet new:*)",
+      "Bash(dotnet build:*)",
+      "Bash(dir \"C:\\\\Users\\\\todd\\\\OneDrive\\\\Documents\\\\GitHub\\\\retrosvr\\\\.claude\")",
+      "Bash(dir:*)",
+      "Bash(tree:*)",
+      "Bash(dotnet clean:*)",
+      "Bash(dotnet publish:*)",
+      "Bash(dotnet format:*)",
+      "Bash(dotnet restore:*)"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\publish\Retro8Bit.exe
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\publish\Retro8Bit.dll
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\publish\Retro8Bit.deps.json
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\publish\Retro8Bit.runtimeconfig.json
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\publish\Retro8Bit.pdb

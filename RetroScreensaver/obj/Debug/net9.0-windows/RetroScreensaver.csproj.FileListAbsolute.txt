@@ -1,0 +1,16 @@
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\bin\Debug\net9.0-windows\Retro8Bit.exe
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\bin\Debug\net9.0-windows\Retro8Bit.deps.json
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\bin\Debug\net9.0-windows\Retro8Bit.runtimeconfig.json
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\bin\Debug\net9.0-windows\Retro8Bit.dll
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\bin\Debug\net9.0-windows\Retro8Bit.pdb
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Debug\net9.0-windows\RetroScreensaver.Forms.ScreensaverForm.resources
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Debug\net9.0-windows\RetroScreensaver.csproj.GenerateResource.cache
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Debug\net9.0-windows\RetroScreensaver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Debug\net9.0-windows\RetroScreensaver.AssemblyInfoInputs.cache
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Debug\net9.0-windows\RetroScreensaver.AssemblyInfo.cs
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Debug\net9.0-windows\RetroScreensaver.csproj.CoreCompileInputs.cache
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Debug\net9.0-windows\Retro8Bit.dll
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Debug\net9.0-windows\refint\Retro8Bit.dll
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Debug\net9.0-windows\Retro8Bit.pdb
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Debug\net9.0-windows\RetroScreensaver.genruntimeconfig.cache
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Debug\net9.0-windows\ref\Retro8Bit.dll

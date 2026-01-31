@@ -1,0 +1,16 @@
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\bin\Release\net9.0-windows\win-x64\Retro8Bit.exe
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\bin\Release\net9.0-windows\win-x64\Retro8Bit.deps.json
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\bin\Release\net9.0-windows\win-x64\Retro8Bit.runtimeconfig.json
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\bin\Release\net9.0-windows\win-x64\Retro8Bit.dll
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\bin\Release\net9.0-windows\win-x64\Retro8Bit.pdb
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\win-x64\RetroScreensaver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\win-x64\RetroScreensaver.AssemblyInfoInputs.cache
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\win-x64\RetroScreensaver.AssemblyInfo.cs
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\win-x64\RetroScreensaver.csproj.CoreCompileInputs.cache
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\win-x64\Retro8Bit.dll
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\win-x64\refint\Retro8Bit.dll
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\win-x64\Retro8Bit.pdb
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\win-x64\RetroScreensaver.genruntimeconfig.cache
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\win-x64\ref\Retro8Bit.dll
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\win-x64\RetroScreensaver.Forms.ScreensaverForm.resources
+C:\Users\todd\OneDrive\Documents\GitHub\retrosvr\RetroScreensaver\obj\Release\net9.0-windows\win-x64\RetroScreensaver.csproj.GenerateResource.cache

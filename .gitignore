@@ -1,3 +1,10 @@
 /RetroScreensaver/bin/Debug
 /.vs
 /RetroScreensaver/obj/Debug
+
+# macOS port
+/macos/build/
+/macos/RetroSVRCore/.build/
+/macos/RetroSVRCore/.swiftpm/
+xcuserdata/
+.DS_Store

@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CA3696308C36CF5D67F5BA7 /* DissolveSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B0A9DFC53B9CDDBE6D952 /* DissolveSoundPlayer.swift */; };
+		3FDF7C58F075C6A4BE6D7F63 /* RetroSVRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F5B28B14F34FD61245C24 /* RetroSVRView.swift */; };
+		4F2B6566F51859D6A7934E80 /* ExitHintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E01D8C2FEC0E702AD86CD4 /* ExitHintView.swift */; };
+		56FA1DBEAAE0C8E8851742E8 /* DesktopImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0DC014EC6EC0E4511DE9CF /* DesktopImageSource.swift */; };
+		6522E9A14576448B2F758A69 /* DissolveSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B0A9DFC53B9CDDBE6D952 /* DissolveSoundPlayer.swift */; };
+		7E15FB52E560341F79CBF4AE /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3574163F1304F356A2FE93F9 /* ScreenSaver.framework */; };
+		9CA37EE06DDD137B39DC219D /* RetroStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E49FCF1B713819C2A54A2D /* RetroStyle.swift */; };
+		A088704A54B3CCD7E25A02A9 /* ConfigureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A5D267021574282772CF7 /* ConfigureSheetController.swift */; };
+		A7574D0A70BD7D2BA3D785BC /* RetroSVRCore in Frameworks */ = {isa = PBXBuildFile; productRef = BC66A1D19EA0276BA7151125 /* RetroSVRCore */; };
+		A8AC7D4BF93960CC36068805 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3574163F1304F356A2FE93F9 /* ScreenSaver.framework */; };
+		A8B07DD82C9E293E1FCF0F04 /* RetroSVRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B46091453673C73F04A1E0 /* RetroSVRApp.swift */; };
+		B0AD28169A148A6B06DAE67B /* RetroSVRCore in Frameworks */ = {isa = PBXBuildFile; productRef = 984059683480F3E30AEC93EF /* RetroSVRCore */; };
+		D374383F338F85857D545989 /* RetroSVRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F5B28B14F34FD61245C24 /* RetroSVRView.swift */; };
+		D47ACF6354AE9EEE02FDBC3A /* FullScreenSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8122C4A1C2C3B65AEB4AD /* FullScreenSaver.swift */; };
+		D6C024A635CF0BE418D48DAF /* DesktopImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0DC014EC6EC0E4511DE9CF /* DesktopImageSource.swift */; };
+		F226849C7EF4ECBFCC19027B /* ConfigureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A5D267021574282772CF7 /* ConfigureSheetController.swift */; };
+		F95C73FA34C0CDD9D9FB1749 /* RetroStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E49FCF1B713819C2A54A2D /* RetroStyle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		095FB5447B4D15625F585E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3574163F1304F356A2FE93F9 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		445B0A9DFC53B9CDDBE6D952 /* DissolveSoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DissolveSoundPlayer.swift; sourceTree = "<group>"; };
+		46E01D8C2FEC0E702AD86CD4 /* ExitHintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitHintView.swift; sourceTree = "<group>"; };
+		4F8721A6BF5202FAD65AB6EB /* RetroSVRCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RetroSVRCore; path = RetroSVRCore; sourceTree = SOURCE_ROOT; };
+		554F5B28B14F34FD61245C24 /* RetroSVRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroSVRView.swift; sourceTree = "<group>"; };
+		57D8122C4A1C2C3B65AEB4AD /* FullScreenSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenSaver.swift; sourceTree = "<group>"; };
+		5804AAA3F08641336CB0C0DB /* RetroSVR.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroSVR.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ADCDB12D9C9EE5AEE05172F /* RetroSVRApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroSVRApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B0DC014EC6EC0E4511DE9CF /* DesktopImageSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopImageSource.swift; sourceTree = "<group>"; };
+		C3E49FCF1B713819C2A54A2D /* RetroStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroStyle.swift; sourceTree = "<group>"; };
+		DA2A5D267021574282772CF7 /* ConfigureSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureSheetController.swift; sourceTree = "<group>"; };
+		F0B46091453673C73F04A1E0 /* RetroSVRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroSVRApp.swift; sourceTree = "<group>"; };
+		F7752D2AC9CECF6F97AC53C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		179D7AC0E89960BC3E7767AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7574D0A70BD7D2BA3D785BC /* RetroSVRCore in Frameworks */,
+				7E15FB52E560341F79CBF4AE /* ScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5529A9E57337FD53001C32DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0AD28169A148A6B06DAE67B /* RetroSVRCore in Frameworks */,
+				A8AC7D4BF93960CC36068805 /* ScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		173F676DD2A5641F4F63BFFE /* Saver */ = {
+			isa = PBXGroup;
+			children = (
+				DA2A5D267021574282772CF7 /* ConfigureSheetController.swift */,
+				6B0DC014EC6EC0E4511DE9CF /* DesktopImageSource.swift */,
+				445B0A9DFC53B9CDDBE6D952 /* DissolveSoundPlayer.swift */,
+				095FB5447B4D15625F585E7E /* Info.plist */,
+				C3E49FCF1B713819C2A54A2D /* RetroStyle.swift */,
+				554F5B28B14F34FD61245C24 /* RetroSVRView.swift */,
+			);
+			path = Saver;
+			sourceTree = "<group>";
+		};
+		47F354FBE01CBF86DE27B9A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3574163F1304F356A2FE93F9 /* ScreenSaver.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59A582E6C85F94B26864D23F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				4F8721A6BF5202FAD65AB6EB /* RetroSVRCore */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		7CE53002EE30E0494A503D82 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				46E01D8C2FEC0E702AD86CD4 /* ExitHintView.swift */,
+				57D8122C4A1C2C3B65AEB4AD /* FullScreenSaver.swift */,
+				F7752D2AC9CECF6F97AC53C3 /* Info.plist */,
+				F0B46091453673C73F04A1E0 /* RetroSVRApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8553784175BFF52344BE9722 = {
+			isa = PBXGroup;
+			children = (
+				7CE53002EE30E0494A503D82 /* App */,
+				59A582E6C85F94B26864D23F /* Packages */,
+				173F676DD2A5641F4F63BFFE /* Saver */,
+				47F354FBE01CBF86DE27B9A7 /* Frameworks */,
+				D45A5274BBD0E5CADC586B7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D45A5274BBD0E5CADC586B7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5804AAA3F08641336CB0C0DB /* RetroSVR.bundle */,
+				6ADCDB12D9C9EE5AEE05172F /* RetroSVRApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A86D0C09A2ECB8690EF1300 /* RetroSVR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89C26A569AF4E42CC229BB5B /* Build configuration list for PBXNativeTarget "RetroSVR" */;
+			buildPhases = (
+				2A27550A585E912BF51E0D2D /* Sources */,
+				5529A9E57337FD53001C32DE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RetroSVR;
+			packageProductDependencies = (
+				984059683480F3E30AEC93EF /* RetroSVRCore */,
+			);
+			productName = RetroSVR;
+			productReference = 5804AAA3F08641336CB0C0DB /* RetroSVR.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D3DF591AC2D0B7B90D117922 /* RetroSVRApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3C9D30B48159934D2BE3A77 /* Build configuration list for PBXNativeTarget "RetroSVRApp" */;
+			buildPhases = (
+				A5F421091E7625A29263E7DE /* Sources */,
+				179D7AC0E89960BC3E7767AF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RetroSVRApp;
+			packageProductDependencies = (
+				BC66A1D19EA0276BA7151125 /* RetroSVRCore */,
+			);
+			productName = RetroSVRApp;
+			productReference = 6ADCDB12D9C9EE5AEE05172F /* RetroSVRApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B38B90AC6651F8C4AC67058 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					7A86D0C09A2ECB8690EF1300 = {
+						ProvisioningStyle = Manual;
+					};
+					D3DF591AC2D0B7B90D117922 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = A5D6E396192F8A8714276650 /* Build configuration list for PBXProject "RetroSVR" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8553784175BFF52344BE9722;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5C4A9D44B42711E774A89AA1 /* XCLocalSwiftPackageReference "RetroSVRCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D45A5274BBD0E5CADC586B7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A86D0C09A2ECB8690EF1300 /* RetroSVR */,
+				D3DF591AC2D0B7B90D117922 /* RetroSVRApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A27550A585E912BF51E0D2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F226849C7EF4ECBFCC19027B /* ConfigureSheetController.swift in Sources */,
+				56FA1DBEAAE0C8E8851742E8 /* DesktopImageSource.swift in Sources */,
+				2CA3696308C36CF5D67F5BA7 /* DissolveSoundPlayer.swift in Sources */,
+				3FDF7C58F075C6A4BE6D7F63 /* RetroSVRView.swift in Sources */,
+				F95C73FA34C0CDD9D9FB1749 /* RetroStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F421091E7625A29263E7DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A088704A54B3CCD7E25A02A9 /* ConfigureSheetController.swift in Sources */,
+				D6C024A635CF0BE418D48DAF /* DesktopImageSource.swift in Sources */,
+				6522E9A14576448B2F758A69 /* DissolveSoundPlayer.swift in Sources */,
+				4F2B6566F51859D6A7934E80 /* ExitHintView.swift in Sources */,
+				D47ACF6354AE9EEE02FDBC3A /* FullScreenSaver.swift in Sources */,
+				A8B07DD82C9E293E1FCF0F04 /* RetroSVRApp.swift in Sources */,
+				D374383F338F85857D545989 /* RetroSVRView.swift in Sources */,
+				9CA37EE06DDD137B39DC219D /* RetroStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1C9107C144D2CA93B1C8A98B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Saver/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.todddube.RetroSVR;
+				PRODUCT_MODULE_NAME = RetroSVR;
+				PRODUCT_NAME = Retro8Bit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+		4051B7AF2B11243AA6F5766C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Saver/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.todddube.RetroSVR;
+				PRODUCT_MODULE_NAME = RetroSVR;
+				PRODUCT_NAME = Retro8Bit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		6B9B6703AC859DD9E784EC5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		7975544E0869EB15AEAB8945 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.todddube.RetroSVR.App;
+				PRODUCT_MODULE_NAME = RetroSVRApp;
+				PRODUCT_NAME = "Retro 8-Bit";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AF79A68E1566987578B99716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		C98DDB44EF49E475E59123B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.todddube.RetroSVR.App;
+				PRODUCT_MODULE_NAME = RetroSVRApp;
+				PRODUCT_NAME = "Retro 8-Bit";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89C26A569AF4E42CC229BB5B /* Build configuration list for PBXNativeTarget "RetroSVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4051B7AF2B11243AA6F5766C /* Debug */,
+				1C9107C144D2CA93B1C8A98B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A3C9D30B48159934D2BE3A77 /* Build configuration list for PBXNativeTarget "RetroSVRApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7975544E0869EB15AEAB8945 /* Debug */,
+				C98DDB44EF49E475E59123B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A5D6E396192F8A8714276650 /* Build configuration list for PBXProject "RetroSVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B9B6703AC859DD9E784EC5B /* Debug */,
+				AF79A68E1566987578B99716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5C4A9D44B42711E774A89AA1 /* XCLocalSwiftPackageReference "RetroSVRCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = RetroSVRCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		984059683480F3E30AEC93EF /* RetroSVRCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RetroSVRCore;
+		};
+		BC66A1D19EA0276BA7151125 /* RetroSVRCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RetroSVRCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6B38B90AC6651F8C4AC67058 /* Project object */;
+}

@@ -66,6 +66,22 @@ Uses P/Invoke (SetParent, SetWindowLong) for preview window embedding.
 - **Multi-monitor**: ScreensaverForm spawned on each screen via `Screen.AllScreens`
 - **Input handling**: Any keyboard/mouse activity exits screensaver (handled in ScreensaverForm)
 
+## macOS Port (`macos/`)
+
+A Swift 6 port built as a `.saver` bundle. See `macos/README.md` for details.
+
+- `macos/RetroSVRCore/`: Swift package with the platform-neutral engine (effects, `EffectManager`, `RenderBuffer`, settings, sound synthesis). No AppKit.
+- `macos/Saver/`: the `ScreenSaverView` subclass (`RetroSVRView`), the configure sheet, sound playback, and the wallpaper source for the Dissolver.
+- `macos/App/`: the standalone **Retro 8-Bit.app**. It runs the view in a window, and its full-screen mode (⌃⌘F, the green button or `--fullscreen`) covers every display until Esc or Space.
+- `macos/project.yml`: XcodeGen spec. Regenerate `RetroSVR.xcodeproj` with `xcodegen generate` instead of editing the project directly.
+
+```bash
+cd macos/RetroSVRCore && swift test        # engine tests
+cd macos && scripts/install.sh             # build + install saver (~/Library/Screen Savers) and app (~/Applications)
+```
+
+Effects in the port are initialized with the **buffer** size (screen ÷ pixel scale), not the window size, unlike the C# version.
+
 ## Documentation Guidelines
 
 - **Update README.md** when making minor or major changes to the project (new effects, API changes, build process updates, new features)

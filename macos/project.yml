@@ -1,0 +1,84 @@
+# XcodeGen spec for the RetroSVR macOS screen saver.
+# Regenerate RetroSVR.xcodeproj after editing: `xcodegen generate` (run in this folder).
+
+name: RetroSVR
+
+options:
+  bundleIdPrefix: com.todddube
+  deploymentTarget:
+    macOS: "13.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    # Ad-hoc signing is enough to run locally. Set DEVELOPMENT_TEAM and a Developer ID
+    # identity (and notarize) to distribute the .saver to other Macs.
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: "-"
+    ENABLE_HARDENED_RUNTIME: YES
+    DEAD_CODE_STRIPPING: YES
+
+packages:
+  RetroSVRCore:
+    path: RetroSVRCore
+
+targets:
+  # The installable screen saver bundle: Retro8Bit.saver
+  RetroSVR:
+    type: bundle
+    platform: macOS
+    sources:
+      - path: Saver
+    dependencies:
+      - package: RetroSVRCore
+      - sdk: ScreenSaver.framework
+    info:
+      path: Saver/Info.plist
+      properties:
+        CFBundleName: Retro 8-Bit
+        CFBundleExecutable: $(EXECUTABLE_NAME)
+        CFBundleDisplayName: Retro 8-Bit
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSPrincipalClass: RetroSVRView
+        NSHumanReadableCopyright: MIT License
+    settings:
+      base:
+        PRODUCT_NAME: Retro8Bit
+        PRODUCT_MODULE_NAME: RetroSVR
+        PRODUCT_BUNDLE_IDENTIFIER: com.todddube.RetroSVR
+        WRAPPER_EXTENSION: saver
+        INSTALL_PATH: $(HOME)/Library/Screen Savers
+        SKIP_INSTALL: YES
+
+  # Standalone app: runs the saver in a window, or full screen until Escape/Space.
+  RetroSVRApp:
+    type: application
+    platform: macOS
+    sources:
+      - path: App
+      - path: Saver
+        excludes:
+          - Info.plist
+    dependencies:
+      - package: RetroSVRCore
+      - sdk: ScreenSaver.framework
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleName: Retro 8-Bit
+        CFBundleDisplayName: Retro 8-Bit
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LSMinimumSystemVersion: $(MACOSX_DEPLOYMENT_TARGET)
+        LSApplicationCategoryType: public.app-category.entertainment
+        NSHighResolutionCapable: true
+        NSHumanReadableCopyright: MIT License
+    settings:
+      base:
+        PRODUCT_NAME: Retro 8-Bit
+        PRODUCT_MODULE_NAME: RetroSVRApp
+        PRODUCT_BUNDLE_IDENTIFIER: com.todddube.RetroSVR.App

@@ -1,107 +1,144 @@
 # RetroSVR
 
-A Windows screensaver featuring classic 8-bit demoscene effects with authentic retro aesthetics.
+An 8-bit demoscene screensaver with chunky pixels, period palettes and six classic effects.
+It ships as two separate builds from the same repository:
 
-## Features
+| | **Windows** | **macOS** |
+|---|---|---|
+| What you get | `Retro8Bit.scr` screensaver (also runs as `Retro8Bit.exe`) | `Retro8Bit.saver` screensaver + `Retro 8-Bit.app` |
+| Language | C# / WinForms, .NET 9 | Swift 6 / AppKit |
+| Source | [`RetroScreensaver/`](RetroScreensaver/) | [`macos/`](macos/) ([details](macos/README.md)) |
+| Requires | Windows 10/11, [.NET 9 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/9.0) | macOS 13+ (Xcode 16+ to build) |
+| Builds on | Windows (`dotnet`) | macOS (`xcodebuild`) |
+| Install | `install.bat` (as Administrator) | `macos/scripts/install.sh` |
+| Settings stored in | Registry: `HKCU\SOFTWARE\Retro8BitScreensaver` | `ScreenSaverDefaults` (`com.todddube.RetroSVR`) |
+| Version | 1.0.0 (`RetroScreensaver.csproj`) | 1.0.0 (`macos/project.yml`) |
 
-- **Pixel-perfect retro look** - 4x pixel scaling for chunky 8-bit visuals
-- **Classic demoscene effects:**
-  - Starfield - 3D parallax star animation
-  - Plasma - Colorful animated plasma patterns
-  - Fire - Realistic flame simulation
-  - Matrix Rain - Digital rain effect
-  - Sine Scroller - Wavy text animation
-  - Dissolver - Dissolve transition effect with crackling sound
-- **Period-appropriate palettes** - CGA, C64, and custom gradient palettes
-- **Multi-monitor support** - Runs on all connected displays
-- **Smooth transitions** - Alpha-blending crossfade between effects
-- **Configurable** - Settings dialog for effect selection and cycle duration
+The two builds share no code. The macOS port was rewritten from the Windows version and fixes
+a few of its bugs along the way (see
+[Differences from the Windows version](macos/README.md#differences-from-the-windows-version)).
 
-## Requirements
+## Effects
 
-- Windows 10/11
-- [.NET 9.0 Runtime](https://dotnet.microsoft.com/download/dotnet/9.0)
+Both platforms have the same six:
 
-## Installation
+- **Starfield** – 3D flight through stars
+- **Plasma** – interfering sine waves through a cycling palette
+- **Fire** – rising demoscene flames
+- **Matrix Rain** – green digital rain
+- **Sine Scroller** – rainbow text waving over raster bars
+- **Dissolver** – a screen capture (Windows) or your wallpaper (macOS) crumbling into falling pixels, with a crackle
 
-### Option 1: Install as Windows Screensaver
+Both builds share these features:
 
-1. Download the latest release or build from source
-2. Run `install.bat` as Administrator
-3. The screensaver will appear in Windows Screen Saver Settings
+- Chunky pixel scaling (4× by default)
+- CGA, C64 and gradient palettes
+- Runs on every display
+- Crossfades between effects
+- A settings dialog for effect, cycle duration and more
 
-### Option 2: Run Standalone
+## Releases
 
-```bash
-# Run in screensaver mode
-Retro8Bit.exe /s
+No prebuilt releases are published yet, so build from source for now (below).
 
-# Open settings dialog
-Retro8Bit.exe /c
+When releases are published they'll be tagged per platform, since each build is versioned
+separately:
+
+| Tag | Asset | Notes |
+|---|---|---|
+| `windows-vX.Y.Z` | `Retro8Bit-windows-x64.zip` (`Retro8Bit.scr` + runtime files) | Needs the .NET 9 Desktop Runtime |
+| `macos-vX.Y.Z` | `Retro8Bit-macos.zip` (`Retro8Bit.saver` + `Retro 8-Bit.app`, universal arm64/x86_64) | Ad-hoc signed unless notarized; see below |
+
+A macOS download that isn't signed with a Developer ID and notarized is blocked by Gatekeeper.
+Right-click › **Open** once, or run `xattr -dr com.apple.quarantine <file>`. Builds you make
+yourself on your own Mac aren't affected.
+
+---
+
+## Windows
+
+### Build and install
+
+```bat
+:: from the repo root, in an Administrator prompt
+install.bat
 ```
 
-## Building from Source
+`install.bat` publishes a Release build to `publish\`, copies `Retro8Bit.exe` to
+`%WINDIR%\System32\Retro8Bit.scr`, and opens Screen Saver Settings. Choose **Retro8Bit**.
+
+To build without installing:
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/retrosvr.git
-cd retrosvr
-
-# Build debug
-dotnet build
-
-# Build release
-dotnet publish -c Release -r win-x64 --self-contained false -o publish
-
-# Run directly
-dotnet run -- /s
+dotnet build                                                                    # debug
+dotnet publish -c Release -r win-x64 --self-contained false -o publish          # release
 ```
 
-## Configuration
+### Run
 
-Access settings via:
-- Right-click the screensaver in Windows Settings and click "Settings"
-- Run with `/c` flag: `Retro8Bit.exe /c`
+| Command | What it does |
+|---|---|
+| `Retro8Bit.exe /s` (or `run.bat`) | Full screen on every display; any key or mouse movement exits |
+| `Retro8Bit.exe /c` | Settings dialog (also the **Settings** button in Screen Saver Settings) |
+| `Retro8Bit.exe /p <hwnd>` | Preview inside Windows' settings dialog (used by Windows) |
 
-Options include:
-- Effect selection (single effect or cycle through all)
-- Cycle duration between effects
-- Transition speed
-
-Settings are stored in the Windows Registry at:
-`HKEY_CURRENT_USER\SOFTWARE\Retro8BitScreensaver`
-
-## Command Line Arguments
-
-| Argument | Description |
-|----------|-------------|
-| `/s` | Run in full-screen screensaver mode |
-| `/c` | Show configuration dialog |
-| `/p [hwnd]` | Preview mode (used by Windows settings) |
-
-## Project Structure
+### Project layout
 
 ```
 RetroScreensaver/
-├── Core/
-│   ├── IEffect.cs        # Effect interface
-│   ├── EffectManager.cs  # Effect lifecycle & transitions
-│   ├── RenderBuffer.cs   # Pixel buffer with scaling
-│   ├── RetroPalette.cs   # Color palettes
-│   └── Settings.cs       # Registry persistence
-├── Effects/
-│   ├── StarfieldEffect.cs
-│   ├── PlasmaEffect.cs
-│   ├── FireEffect.cs
-│   ├── MatrixRainEffect.cs
-│   ├── SineScrollerEffect.cs
-│   └── DissolverEffect.cs
-├── Forms/
-│   ├── ScreensaverForm.cs
-│   └── SettingsForm.cs
-└── Program.cs
+├── Core/       IEffect, EffectManager (cycling + crossfade), RenderBuffer, RetroPalette, Settings, SoundHelper
+├── Effects/    the six effects
+├── Forms/      ScreensaverForm, SettingsForm
+└── Program.cs  /s /c /p argument handling
+```
+
+---
+
+## macOS
+
+### Build and install
+
+```bash
+cd macos
+scripts/install.sh               # saver → ~/Library/Screen Savers, app → ~/Applications
+scripts/install.sh --uninstall   # remove both
+```
+
+Then choose **Retro 8-Bit** in System Settings › Screen Saver.
+
+### Two ways to run it
+
+- **As a screensaver.** System Settings runs it full screen on every display. Any key or mouse
+  movement ends it, as usual. **Options…** opens the settings sheet.
+- **As an app.** **Retro 8-Bit.app** opens the saver in a window for trying effects (⌘, for
+  settings).
+  - **Go full screen** with ⌃⌘F, the green window button, or
+    `open "$HOME/Applications/Retro 8-Bit.app" --args --fullscreen`. It covers every display
+    and shows a **[ESC] or [SPACE] to exit** banner.
+  - **Leave full screen** with **Esc** or **Space**, which return to the window.
+
+The app and the installed saver keep separate settings, because macOS runs screensavers in a
+sandboxed host with its own preferences.
+
+### Develop
+
+```bash
+cd macos/RetroSVRCore && swift test      # engine tests
+cd macos && open RetroSVR.xcodeproj      # schemes: RetroSVR (.saver), RetroSVRApp (app)
+```
+
+`RetroSVR.xcodeproj` is generated from `macos/project.yml` with
+[XcodeGen](https://github.com/yonaskolb/XcodeGen). See [`macos/README.md`](macos/README.md)
+for the layout, settings, signing and notarization.
+
+---
+
+## Get the source
+
+```bash
+git clone https://github.com/todddube/retrosvr.git
 ```
 
 ## License
 
-MIT License - See LICENSE file for details.
+MIT.
